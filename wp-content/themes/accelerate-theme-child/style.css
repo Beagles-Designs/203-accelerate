@@ -4,9 +4,23 @@ Theme URI:    http://example.com/accelerate-theme-child/
 Description:  Accelerate Child Theme - Accelerate
 Author:   	Sarah Beagle | Driftwood Creative
 Author URI:   http://example.com
-Template: 	accelerate-theme-child
+Template: 	accelerate-theme
 Version:      2.0.0
 Tags:     	light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
 Text Domain:  accelerate-theme-child
 */
 
+/* HEADER STYLES */
+#masthead {
+  background: none repeat scroll 0 0 #45ac9d;
+}
+
+
+/* HOMEPAGE STYLES */
+.home-page {
+    background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+}
+
+.button {
+	background: #45ac9d;
+}
