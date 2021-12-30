@@ -49,3 +49,43 @@ Text Domain:  accelerate-theme-child
   color: #45ac9d;
   text-transform: uppercase;
 }
+
+/*Case Studies Styles*/
+
+.case-study-sidebar {
+  float: left;
+  width: 33%;
+}
+
+.case-study-sidebar h2 {
+  size: 1.5em;
+}
+
+.case-study-sidebar h5 {
+  color: lightgrey;
+  font-size: .60em;
+  margin: .5em 0;
+}
+
+.case-study-sidebar h6 {
+  font-size: .60em;
+  margin: .5em 0;
+}
+
+.case-study-sidebar p {
+  margin-top: 2em;
+}
+
+.case-button {
+  color: #45ac9d;
+}
+
+.case-study-images {
+  float: right;
+  width: 66%;
+}
+
+.case-study-images a {
+  display: flex;
+  justify-content: flex-end;
+}
