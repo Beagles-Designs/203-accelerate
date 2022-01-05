@@ -25,6 +25,10 @@ Text Domain:  accelerate-theme-child
 	background: #45ac9d;
 }
 
+.home-page {
+  margin-bottom: 2em;
+}
+
 /*Blog Post Styles*/
 .blog-post {
   width: 50%;
@@ -88,4 +92,24 @@ Text Domain:  accelerate-theme-child
 .case-study-images a {
   display: flex;
   justify-content: flex-end;
+}
+
+/* Homepage Featured Work Styles */
+
+.featured-work h4 {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+ul.homepage-featured-work {
+  list-style: none;
+  display: flex;
+  text-align: center;
+  justify-content: flex-start;
+}
+
+li.featured-work-individual h3 {
+  font: 500 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+  margin-top: 5px;
 }

@@ -22,6 +22,30 @@ get_header(); ?>
 			<?php endwhile; // end of the loop. ?>
 		</div><!-- .main-content -->
 	</div><!-- #primary -->
+<section class="featured-work">
+    <div class='site-content'>
+        <h4>Featured Work</h4>
+
+        <ul class="homepage-featured-work">
+            <?php query_posts('posts_per_page=3&post_type=case_studies'); ?>
+                <?php while ( have_posts()) : the_post(); 
+                    $image1 = get_field("image_1");
+                    $size = "medium";
+                ?>
+                    <!-- Loop content here -->
+                    <li class="featured-work-individual">
+                        <figure>
+                            <a href="<?php the_permalink(); ?>"><?php echo wp_get_attachment_image($image1, $size); ?></a>
+                        </figure>
+                        <h3><a href="<?php the_permalink(); ?>"><strong><?php the_title(); ?></strong></a></h3>
+                    </li>    
+                <?php endwhile; ?>
+            <?php wp_reset_query(); ?>         
+        </ul>
+
+    </div>    
+</section>
+
     <section class="recent-posts"> <!-- Adding most recent blog post to homepage -->
         <div class="site-content">
         <div class="blog-post">
