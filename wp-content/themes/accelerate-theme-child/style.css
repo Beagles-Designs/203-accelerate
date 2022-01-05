@@ -89,9 +89,30 @@ Text Domain:  accelerate-theme-child
   width: 66%;
 }
 
+div.case-study-images {
+  width: 60%;
+  height: auto;
+}
+
 .case-study-images a {
   display: flex;
   justify-content: flex-end;
+}
+
+div.archive-case-study-images {
+  width: 60%;
+}
+
+ul.archive-case-study {
+  list-style: none;
+}
+
+li.archive-case-study-individual {
+  display: flex;
+}
+
+article.case-study {
+  width: 100%;
 }
 
 /* Homepage Featured Work Styles */
@@ -112,4 +133,65 @@ ul.homepage-featured-work {
 li.featured-work-individual h3 {
   font: 500 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
   margin-top: 5px;
+}
+
+/*---------- Footer CSS----------------*/
+/*--------- Social Media Menu CSS-----*/
+
+
+ ul.social-media-menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+} 
+
+.social-media-menu span {
+  display: none;
+}
+
+div.menu-social-media-nav-container {
+    width: 150px;
+}
+
+ul.social-media-menu li.menu-item {
+    background-color: black;
+    border-radius: 50%;
+    padding: 15px;
+    width: 1em;
+    height: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a[href="https://twitter.com"]::before {
+  font-family: "FontAwesome";
+  content:  "\f099";
+  color: white;
+}
+
+a[href="https://facebook.com"]::before {
+  font-family: "FontAwesome";
+  content:  "\f39e";
+  color: white;
+}
+
+a[href="https://linkedin.com"]::before {
+  font-family: "FontAwesome";
+  content:  "\f0e1";
+  color: white;
+} 
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
 }
