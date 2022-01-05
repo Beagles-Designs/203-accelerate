@@ -106,7 +106,7 @@ ul.homepage-featured-work {
   list-style: none;
   display: flex;
   text-align: center;
-  justify-content: flex-start;
+  justify-content: space-evenly;
 }
 
 li.featured-work-individual h3 {
